@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@500&display=swap');
+*{
+    padding:0;
+    margin: 0 auto;
+}
+body{
+    width:100vw;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #8b4545;
+	
+}
+header{
+	width: 100vw;
+	height: 120px;
+	background-color: #fff;
+	position: fixed;
+  	top: 0;
+  	left: 0;
+	transition: 0.3s;
+	color: #522222;
+	z-index: 1;
+	box-shadow: 0 10px 50px rgba(1, 1, 1, 0.14);
+}
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #522222;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle, #522222, #522222);
+	border-radius: 50%;
+    border: 2px solid #fff;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 500px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+header a{
+    text-decoration: none;
+    color: #522222;
+}
+h1{
+    font-size:60px;
+    font-family: 'Playball', cursive;
+    padding-left: 8%;
+}
+.bottom h2{
+	font-size: 30px;
+    position:absolute;
+    left:8%;
+    top:58%;
+}
+.bottom i{
+	position: absolute;;
+	left: 1.5%;
+	top: 61%;
+	font-size: 30px;
+}
+
+.container{
+    width:100%;
+    padding-top:130px;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.category a{
+    text-decoration: none;
+}
+.category{
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding:5px 10px;
+}
+.category img{
+    width:100%;
+    height:200px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.category .name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: 800;
+    color:#fff;
+}
+
+.main{
+    width:100%;
+    padding-top: 130px;
+    color: #fff;
+    min-height: calc(100vh - 120px);
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.name{
+    margin-left: 2%;
+    font-size: 30px;
+}
+.name span{
+    font-style: italic;
+    font-size: 20px;
+}
+.price{
+    margin-right: 5%;
+    font-size: 30px;
+}
+.divider{
+    width: 100%;
+    height: 0;
+    border: medium none;
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+}
+.botellas{
+    margin-top: -50px;
+}
+.botellas th{
+    font-size: 20px;
+}
+th img{
+    width: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    font-size: 30px;
+}
+th, td {
+    width: 15%;
+    text-align: center;
+    padding: 8px;
+}
+td{
+    border: medium none;
+    border-bottom: 2px solid #fff;
+
+}
+th:first-child, td:first-child {
+    text-align: left;
+    width: 40%;
+    padding-left: 30px;
+}
+.last td{
+    border-bottom: none;
+}
+
+.divisive{
+    width: 100%;
+    height: 0;
+    border: medium none;
+    border-bottom: 4px solid #ddd;
+    background-color: #fff;
+    margin-top: 40px;
+}
+footer{
+    width: 100%;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color: #522222;
+
+}
+.logo{
+    margin-left: 4%;
+}
+footer h3{
+    font-size:60px;
+    font-family: 'Playball', cursive;
+}
+footer p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 4%;
+    margin-top: -40px;
+}
+
+
+@media handheld,screen and  (max-width: 719px){
+    header{
+        height: 80px;
+    }
+    .change-bg{
+        width: 450px;
+        height: 350px;
+    }
+    #menu{
+        width: 25px;
+        height: 15px;
+        margin: 20px 0 0px 10px;
+    }
+    h1{
+        font-size:45px;
+        margin-left: 5%;
+    }
+    .bottom h2{
+        font-size: 0px;
+    }
+    .bottom i{
+        left: 10px;
+        top: 60%;
+        font-size: 25px;
+    }
+    
+    .container{
+        padding-top:90px;
+        min-height: calc(100vh - 80px);
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        padding-top: 90px;
+        min-height: calc(100vh - 80px);
+    }
+    .name{
+        font-size: 20px;
+    }
+    .name span{
+        font-size: 15px;
+        display: none;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .size{
+        margin-top: -15px;
+    }
+    .botellas{
+        margin-top: -30px;
+    }
+    .botellas th{
+        font-size: 15px;
+    }
+    th img{
+        width: 0;
+    }
+    th{
+        font-size: 20px;
+    }
+    td{
+        
+        border: medium none;
+        border-bottom: 2px solid #fff;
+    }
+    th:first-child, td:first-child {
+        text-align: left;
+        width: 35%;
+        padding-left: 10px;
+    }
+    .last td{
+        border-bottom: none;
+    }
+    
+    .divisive{
+        width: 100%;
+        height: 0;
+        border: medium none;
+        border-bottom: 4px solid #ddd;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+    footer{
+        height:80px;
+    }
+    .logo{
+        margin-left: 2%;
+    }
+    footer h3{
+        font-size:30px;
+    }
+    footer p{
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-right: 4%;
+        margin-top: -28px;
+    }
+}
+
+@media handheld,screen and  (min-width: 720px) and (max-width: 1023px){
+    header{
+        height: 100px;
+    }
+    #menu{
+        width: 30px;
+        height: 25px;
+        margin: 30px 0 20px 15px;
+    }
+    h1{
+        font-size:60px;
+    }
+    .bottom h2{
+        font-size: 25px;
+        position:absolute;
+        left:8%;
+        top:60%;
+    }
+    .bottom i{
+        position: absolute;;
+        left: 2%;
+        top: 61%;
+    }
+
+    .container{
+        padding-top:120px;
+        min-height: calc(100vh - 120px);
+    }
+    .grid{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main{
+        padding-top: 110px;
+        min-height: calc(100vh - 120px);
+    }
+    .name{
+        margin-left: 1%;
+        font-size: 30px;
+    }
+    .size{
+        margin-top: -25px;
+    }
+    .botellas{
+        margin-top: -70px;
+    }
+}
